@@ -1,0 +1,390 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #0d0d0d;
+  color: #fff;
+}
+
+
+.hero {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  color: #fff;
+}
+
+.hero__video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.hero__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.hero__content {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.hero__content h1 {
+  font-size: 2.5rem;
+}
+.hero__content p {
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: 'Cinzel Decorative', serif;
+  opacity: 0.6;
+}
+
+.hero__content h1 {
+  font-weight: bold;
+  margin: 0;
+  font-size: 100px;
+  margin-bottom: 5px;
+  color: #ddd;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  opacity: 0.6;
+  font-family: 'Cinzel Decorative', serif;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+
+header{
+   position: fixed;
+    z-index: 10;
+    width: 100%;
+    height: 70px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    background: transparent; 
+}
+.logo{
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: "Roboto Slab", serif;
+    text-decoration: none;
+    cursor: pointer;
+}
+nav a{
+    color: white;
+    transition: color 0.3s ease; 
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: "Roboto Slab", serif;
+    position: relative;
+    padding-bottom: 6px; 
+    display: inline-block;
+}
+nav{
+    display: flex;      
+    gap: 15px;           
+    align-items: center;
+    margin-right: 50px;
+}
+nav a::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;          
+    width: 100%;
+    background: rgb(238, 237, 234);        
+    transform: scaleX(0);     
+    transform-origin: left;
+    transition: transform 200ms ease;
+}
+nav a:hover::after,
+nav a:focus::after {
+    transform: scaleX(1);
+}
+header.scrolled nav a,
+nav.scrolled a {
+    color: rgba(255, 253, 253, 0.9);
+}
+header.scrolled {
+    background: rgba(138, 137, 136, 0.5);
+}
+.holl{
+    margin: 100px 0 100px 0;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-family: 'Cinzel Decorative', serif;
+}
+
+.menu_content {
+    display: grid;
+    grid-template-columns: 45% 55%;
+    grid-auto-rows: minmax(100px, auto);
+    grid-template-areas:
+        "leftTop rightTop"
+        "leftCenter rightTop"
+        "leftCenter rightTop"
+        "leftBottom rightBottom";
+    min-height: 70vh;
+    gap: 20px;
+    padding: 20px;
+}
+
+
+
+.menu_content .leftCenter,
+.menu_content .leftBottom,
+.menu_content .rightTop,
+.menu_content .rightBottom {
+  
+  padding: 40px 20px;   
+  min-height: 0;        
+  overflow: hidden;
+  position: relative;  
+  z-index: 1;
+}
+
+.block {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    font-family: 'Cinzel Decorative', serif;
+    font-size: 50px;
+    font-weight: bold;
+    position: relative;
+    overflow: hidden;
+    background-position: center;
+    background-size: cover;
+    border-radius: 15px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+.block-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
+    transition: all 0.3s ease;
+}
+
+.block p {
+    position: relative;
+    z-index: 2;
+    padding: 30px;
+    margin: 0;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.menu_content .leftTop {
+    grid-area: leftTop;
+    height: 100px;
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(45deg, rgba(0,0,0,0.8), rgba(20,20,20,0.9));
+}
+
+.menu_content .leftCenter {
+    grid-area: leftCenter;
+    background-image: url("light-2565575_1920.jpg");
+}
+
+.menu_content .leftBottom {
+    grid-area: leftBottom;
+    background-image: url("chelik.jpg");
+}
+
+.menu_content .rightTop {
+    grid-area: rightTop;
+    background-image: url("graphik.jpg");
+}
+
+.menu_content .rightBottom {
+    grid-area: rightBottom;
+    background-image: url("panelki.jpg");
+}
+
+
+.hvr-reveal::before {
+    border-color: rgba(255, 255, 255, 0.8);
+    border-width: 3px;
+}
+
+
+.block:hover .block-overlay {
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.block:hover p {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+.menu_content .leftCenter,
+.menu_content .leftBottom,
+.menu_content .rightTop,
+.menu_content .rightBottom {
+ 
+  padding: 40px 20px;   
+  min-height: 0;       
+  overflow: hidden;
+  position: relative;  
+  z-index: 1;
+}
+
+
+.menuImg{
+    width: 500px;
+    height: 450px;
+    border-radius: 10px;
+}
+.menuItem{
+    font-family: 'Cinzel Decorative', serif;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    margin-top: 10px;
+    width: 550px;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.menuTub{
+  display: flex;
+  justify-content: space-around;
+  padding: 100px;
+ 
+
+}
+
+.btn{
+   height: 50px;
+   width: 100%;
+   font-size: 20px;
+   font-weight: bold;
+   font-family:  'Cinzel Decorative', serif;
+   cursor: pointer;
+   border-bottom: 2px solid white;
+   border-radius: 10px;
+   color: white;
+   background: none;
+   align-items: start;
+} 
+.btn:hover{
+    background: white;
+    transition: 0.5s;
+    color: black;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+.card img{
+    width: 100vh;
+    height: 500px;
+    border-radius: 10px;
+}
+.MenuBottomTub{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+.card p{
+    font-family: 'Cinzel Decorative', serif;
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    margin-top: 10px;
+    width: 800px;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.card h2{
+    font-family: 'Cinzel Decorative', serif;
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    margin-top: 10px;
+    width: 800px;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.baton{
+   height: 50px;
+   font-size: 20px;
+   font-weight: bold;
+   font-family:  'Cinzel Decorative', serif;
+   cursor: pointer;
+   border-radius: 10px;
+   color: white;
+   background:  none;
+   margin-bottom: 25px;
+} 
+.baton:hover{
+    background: white;
+    color: black;
+}
+footer{
+     background-color:  rgba(235, 228, 210, 0.95);
+     height: 150px;
+     color: black;
+     display: flex;
+     justify-content: center;
+     padding: 20px;
+}
+.socials{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    font-size: 30px;
+    margin-top: 30px;
+}
+.socials a{
+    color: black;
+}
+.menu_content img{
+    width: 100%;
+    height: auto;
+}
+html{
+    scroll-behavior: smooth;
+}

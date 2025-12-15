@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Meat Corp</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Alfa+Slab+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+  <section class="hero">
+    <header>
+         <div class="logo">EcoCloud</div>
+      <nav class="nav">
+        <a href="#">Головна</a>
+        <a href="#Tub">Про нас</a>
+        <a href="#footer">Контакти</a>
+        <a href="#">Встановити додаток</a>
+      </nav>
+    </header>
+
+    <video autoplay muted loop playsinline class="hero__video">
+      <source src="light.mp4" type="video/mp4">
+      Ваш браузер не підтримує відео тег.
+    </video>
+    <div class="hero__overlay"></div>
+    <div class="hero__content">
+      <h1> EcoCloud </h1>
+      <p>Використовуй свою енергію розумно!</p>
+    </div>
+  </section>
+
+  <h1 data-aos="zoom-in" class="holl">Що ми пропунуэмо</h1>
+
+  <div class="menu_content">
+    <div data-aos="fade-up" class="leftTop block">
+      <p>Меньші платежі за електроенергію</p>
+    </div>
+    <div data-aos="fade-up" class="leftCenter block">
+      <p>Меньші витрати електроенергії</p>
+    </div>
+    <div data-aos="fade-up" class="leftBottom block">
+      <p>Зручність додатку</p>
+    </div>
+    <div data-aos="fade-up" class="rightTop block">
+      <p>Графік використання електроенергії</p>
+    </div>
+    <div data-aos="fade-up" class="rightBottom block">
+      <p>Швидка установка системи</p>
+    </div>
+  </div>
+
+  <section id="Tub" data-aos="fade-up" class="menuTub">
+    <div class="firstTub menuItem">
+      <h2>Наша місія </h2>
+      <p>Ми об’єднуємо сучасні технології IoT та штучного інтелекту, щоб забезпечити користувачам прозорий моніторинг споживання, розумні поради для економії та можливість ділитися надлишковою енергією з іншими.</p>
+      <button data-aos="fade-right" class="btn">Дивитись спеціальні пропозиції</button>
+    </div>
+
+    <div class="SecondTub menuItem">
+      <h2>Наша візія</h2>
+      <p>Створити розумну екосистему, де кожна людина та бізнес можуть ефективно управляти енергією й ресурсами, зменшуючи витрати та вплив на довкілля.</p>
+      <button data-aos="fade-left" class="btn">Дивитись комбо</button>
+    </div>
+  </section>
+
+
+  <section class="MenuBottomTub">
+    <div class="card">
+      <h2>Що таке EcoCloud?</h2>
+      <p data-aos="fade-up">EcoCloud – це розумна екосистема, що поєднує мобільний застосунок та IoT-пристрої для контролю, оптимізації та обміну енергією та комунальними ресурсами. За допомогою штучного інтелекту користувачі отримують не просто статистику, а персоналізовані поради щодо економії. Наприклад, додаток може порахувати, що вимкнення бойлера на кілька годин дозволить зекономити десятки гривень щомісяця. Таким чином, рішення допомагає людям більш свідомо використовувати енергію та зменшувати власні витрати.</p>
+      <img data-aos="slide-up" src="des.jpeg" alt="Menu Image Bottom">
+    </div>
+    <hr>
+    <div class="card">
+      <img data-aos="slide-up" src="desi.jpeg" alt="Menu Image Bottom">
+      <h2>Наші цінності</h2>
+      <p data-aos="fade-up">Ми віримо, що технології повинні служити людям і природі.EcoCloud прагне до сталого розвитку, допомагаючи кожному свідомо споживати енергію та ресурси.Ми створюємо прозорість у всьому — від даних до взаємодії користувачів.Наш підхід базується на інноваціях, простоті й довірі, щоб кожен міг не лише економити, а й робити свій внесок у чистіше майбутнє.</p>
+
+    </div>
+  </section>
+
+  <footer id="footer">
+    <div class="footerCon">
+
+      <div class="socials">
+        <a href="#" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="#" target="_blank" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+        <a href="#" target="_blank" aria-label="Telegram"><i class="fab fa-telegram-plane"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+ <script>
+  AOS.init({
+    duration: 1200,
+    easing: 'ease-out-back',
+  });
+  
+</script>
+
+</body>
+</html>
