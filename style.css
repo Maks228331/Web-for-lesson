@@ -172,7 +172,7 @@ header.scrolled {
 
 .block {
     border: 1px solid rgba(255, 255, 255, 0.1);
-    font-family: 'Cinzel Decorative', serif;
+    font-family: "Roboto Slab", serif;
     font-size: 50px;
     font-weight: bold;
     position: relative;
@@ -264,7 +264,7 @@ header.scrolled {
     border-radius: 10px;
 }
 .menuItem{
-    font-family: 'Cinzel Decorative', serif;
+    font-family: "Roboto Slab", serif;
     font-size: 30px;
     font-weight: bold;
     color: white;
@@ -289,7 +289,7 @@ header.scrolled {
    width: 100%;
    font-size: 20px;
    font-weight: bold;
-   font-family:  'Cinzel Decorative', serif;
+   font-family: "Roboto Slab", serif;
    cursor: pointer;
    border-bottom: 2px solid white;
    border-radius: 10px;
@@ -310,8 +310,8 @@ header.scrolled {
     width: 100%;
 }
 .card img{
-    width: 100vh;
-    height: 500px;
+    width: 100%;
+    height: auto;
     border-radius: 10px;
 }
 .MenuBottomTub{
@@ -320,7 +320,7 @@ header.scrolled {
     margin-bottom: 100px;
 }
 .card p{
-    font-family: 'Cinzel Decorative', serif;
+    font-family: "Roboto Slab", serif;
     font-size: 25px;
     font-weight: bold;
     color: white;
@@ -333,7 +333,7 @@ header.scrolled {
     flex-direction: column;
 }
 .card h2{
-    font-family: 'Cinzel Decorative', serif;
+    font-family: "Roboto Slab", serif;
     font-size: 40px;
     font-weight: bold;
     color: white;
@@ -352,7 +352,7 @@ header.scrolled {
    height: 50px;
    font-size: 20px;
    font-weight: bold;
-   font-family:  'Cinzel Decorative', serif;
+   font-family: "Roboto Slab", serif;
    cursor: pointer;
    border-radius: 10px;
    color: white;
@@ -368,7 +368,6 @@ footer{
      height: 150px;
      color: black;
      display: flex;
-     justify-content: center;
      padding: 20px;
 }
 .socials{
@@ -387,4 +386,244 @@ footer{
 }
 html{
     scroll-behavior: smooth;
+}
+
+
+.card img{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.btn{
+   width: auto;
+   min-width: 180px;
+   padding: 10px 18px;
+   display: inline-flex;
+   align-items: center;
+   justify-content: center;
+   box-sizing: border-box;
+}
+
+.menuTub{
+  gap: 24px;
+  align-items: center;
+  padding: 80px 40px;
+  flex-wrap: nowrap;
+}
+
+@media (max-width: 1024px) {
+  .menu_content {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "leftTop"
+      "leftCenter"
+      "leftBottom"
+      "rightTop"
+      "rightBottom";
+    gap: 16px;
+    padding: 16px;
+  }
+
+  .menuTub{
+    flex-direction: column;
+    padding: 60px 24px;
+  }
+
+  .menuItem{
+    width: 100%;
+    padding: 0 12px;
+  }
+
+  .MenuBottomTub{
+    flex-direction: column;
+    gap: 20px;
+    padding: 0 20px 60px;
+  }
+
+  .card p, .card h2 {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  header{
+    height: 60px;
+    padding: 0 12px;
+  }
+
+  nav a{
+    margin: 0 10px;
+    font-size: 16px;
+  }
+
+  .hero__content h1{
+    font-size: 48px;
+  }
+
+  .hero__content p{
+    font-size: 18px;
+  }
+
+  .block{
+    font-size: 28px;
+  }
+
+  .menuTub{
+    padding: 40px 16px;
+  }
+
+  .btn{
+    min-width: 160px;
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  header{
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+    height: auto;
+    padding: 10px 12px;
+  }
+
+  .logo{
+    font-size: 24px;
+  }
+
+  nav{
+    width: 100%;
+    justify-content: flex-start;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-right: 0;
+  }
+
+  nav a{
+    font-size: 14px;
+    margin: 6px 8px;
+  }
+
+  .hero__content h1{
+    font-size: 32px;
+  }
+
+  .hero__content p{
+    font-size: 16px;
+  }
+
+  .menuTub{
+    padding: 20px 12px;
+    align-items: stretch;
+  }
+
+  .menuItem{
+    width: 100%;
+    text-align: center;
+  }
+
+ 
+  .btn{
+    width: 100%;
+    max-width: 360px;
+    align-self: center;
+    padding: 12px 18px;
+  }
+
+  .MenuBottomTub{
+    padding-bottom: 40px;
+  }
+
+  .socials{
+    gap: 18px;
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 360px) {
+  .hero__content h1{ font-size: 28px; }
+  .hero__content p{ font-size: 14px; }
+  .menuTub{ padding: 16px 8px; }
+  .btn{ font-size: 16px; padding: 10px 14px; }
+}
+footer p{
+    margin: 0;
+    font-size: 20px;
+    font-family: serif;
+    font-weight: bold;
+}
+
+.site-footer{
+  background: #070707;
+  color: #dfe7ea;
+  padding: 28px 16px;
+  border-top: 1px solid rgba(255,255,255,0.03);
+  font-size: 15px;
+}
+
+.site-footer__inner{
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  gap: 24px;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.site-footer__brand .logo{
+  font-family: "Roboto Slab", serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 6px;
+}
+
+.site-footer__desc{
+  margin: 0;
+  color: rgba(255,255,255,0.75);
+  max-width: 360px;
+  line-height: 1.4;
+}
+
+.site-footer__contacts h4{
+  margin: 0 0 6px 0;
+  color: #fff;
+  font-size: 15px;
+}
+
+.site-footer__contacts ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  color: rgba(255,255,255,0.85);
+}
+
+.site-footer__contacts a{
+  color: rgba(255,255,255,0.9);
+  text-decoration: none;
+}
+
+.site-footer__contacts li{
+  margin: 6px 0;
+  line-height: 1.4;
+}
+
+.site-footer__bottom{
+  max-width: 1100px;
+  margin: 12px auto 0;
+  text-align: center;
+  color: rgba(255,255,255,0.6);
+  font-size: 14px;
+}
+
+@media (max-width: 600px){
+  .site-footer__inner{
+    flex-direction: column;
+    gap: 12px;
+    align-items: flex-start;
+  }
+
+  .site-footer__brand .logo{ font-size: 20px; }
 }
